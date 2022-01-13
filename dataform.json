@@ -1,6 +1,6 @@
 {
     "warehouse": "bigquery",
-    "defaultSchema": "dataform",
+    "defaultSchema": "z_jcanoalo",
     "assertionSchema": "dataform_assertions",
     "defaultDatabase": "jlr-dl-cat-training"
 }

@@ -1,0 +1,7 @@
+config {
+  type: "declaration",
+  database: "jlr-dl-cat-training",
+  schema: "z_jcanoalo",
+  name: "Table_input",
+  description: "raw input"
+}
