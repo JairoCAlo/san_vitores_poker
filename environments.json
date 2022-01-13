@@ -4,6 +4,10 @@
       "name": "production",
       "configOverride": {},
       "gitRef": "master"
+    },
+    {
+      "name": "test_jca",
+      "gitRef": "dataform_test_jca"
     }
   ]
 }
