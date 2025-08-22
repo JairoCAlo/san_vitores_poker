@@ -8,18 +8,20 @@
     body {
       background-color: #121212;
       color: #f2f2f2;
-      font-family: 'Courier New', monospace;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
-      background-image: url('https://ih1.redbubble.net/image.5305911255.5881/raf,750x1000,075,t,fafafa:ca443f4786.jpg'); /* Cambia esto por la URL real */
+      background-image: url('https://ih1.redbubble.net/image.5305911255.5881/raf,750x1000,075,t,fafafa:ca443f4786.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
+      filter: brightness(100%);
+      overflow-x: hidden;
     }
 
     header {
       background-color: rgba(26, 26, 26, 0.9);
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
       border-bottom: 3px solid crimson;
       position: relative;
@@ -29,8 +31,9 @@
     header h1 {
       font-size: 5em;
       color: gold;
-      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7), 0 0 30px crimson;
+      text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.7), 0 0 30px crimson;
       margin: 0;
+      font-weight: bold;
     }
 
     header p {
@@ -38,24 +41,28 @@
       color: #ccc;
       margin-top: 20px;
       font-size: 1.4em;
+      font-weight: bold;
     }
 
     section {
       max-width: 900px;
       margin: 60px auto;
-      padding: 35px;
+      padding: 40px;
       background-color: rgba(30, 30, 30, 0.8);
       border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+      margin-bottom: 60px;
+      font-size: 1.5em;
+      font-weight: bold;
     }
 
     h2 {
       color: crimson;
-      font-size: 3.5em;
+      font-size: 3.8em;
       border-bottom: 2px solid #444;
       padding-bottom: 10px;
-      margin-bottom: 25px;
-      font-weight: 900;
+      margin-bottom: 30px;
+      font-weight: bold;
     }
 
     .btn {
@@ -68,23 +75,25 @@
       text-decoration: none;
       border-radius: 10px;
       text-transform: uppercase;
-      font-size: 1.3em;
-      transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+      font-size: 1.4em;
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .btn:hover {
       background-color: crimson;
       color: white;
       transform: scale(1.1);
+      box-shadow: 0px 0px 15px crimson;
     }
 
     footer {
       text-align: center;
       padding: 30px;
-      font-size: 1.1em;
+      font-size: 1.3em;
       color: #bbb;
       background-color: #0d0d0d;
       border-top: 3px solid crimson;
+      font-weight: bold;
     }
 
     ul {
@@ -97,21 +106,51 @@
       line-height: 2em;
     }
 
-    /* Responsive styling */
+    /* Contenedor de audio */
+    .audio-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    iframe {
+      border-radius: 15px;
+      border: none;
+      max-width: 100%;
+      width: 760px;
+      height: 240px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    iframe:hover {
+      transform: scale(1.05); /* Añadir efecto sutil de zoom */
+    }
+
+    /* Responsive Styling */
     @media (max-width: 768px) {
       header h1 {
-        font-size: 3.5em;
+        font-size: 3.8em;
       }
 
       h2 {
-        font-size: 2.5em;
+        font-size: 2.8em;
       }
 
       .btn {
         padding: 15px 30px;
+        font-size: 1.5em;
+      }
+
+      iframe {
+        width: 100%;
+        height: auto;
       }
     }
+
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -123,8 +162,8 @@
   <section>
     <h2>🃏 Fechas del Torneo</h2>
     <p>
-      🔥 <strong>Primera partida:</strong> Viernes, 23 de agosto<br>
-      💀 <strong>Final sangrienta:</strong> Lunes, 26 de agosto
+      🔥 <strong>Primera partida:</strong> Viernes, 23 de agosto - 18:00<br>
+      💀 <strong>La gran final:</strong> Lunes, 26 de agosto - 18:00
     </p>
   </section>
 
@@ -143,13 +182,13 @@
       <li>No se vale llorar. Gente estoica, pierde con estilo. El llanto es para los débiles.</li>
       <li>El crupier es ley. Lo que diga, va, o te sacamos a patadas.</li>
       <li>Prohibido hacer trampas... a no ser que no te pillen, claro.</li>
-      <li>Judios Masones, Mafia, Gansters, Agricultores, Cuturistas, Fumetas.... todos soys bienvenidos.</li>
+      <li>Judíos Masones, Mafia, Gánsters, Agricultores, Culturistas, Fumetas... todos sois bienvenidos.</li>
     </ul>
   </section>
 
   <section>
     <h2>📝 Inscripción</h2>
-    <p>¿Quieres una silla en esta mesa de leyendas? Apúntate antes de que el FBI nos cierre el chiringuito, hermano.</p>
+    <p>¿Quieres una silla en esta mesa de leyendas? ¡Apúntate antes de que el FBI nos cierre el chiringuito!</p>
     <a href="https://cdn.memegenerator.es/imagenes/memes/full/23/5/23055369.jpg" class="btn">¡Únete a la mesa!</a>
   </section>
 
@@ -158,6 +197,13 @@
     <p>El lugar es tan secreto que ni nosotros sabemos dónde es. Lo descubrimos a última hora.</p>
   </section>
 
+  <!-- Contenedor para el embed con autoplay -->
+  <div class="audio-container">
+    <iframe src="https://suno.com/embed/80433eb6-acf2-4caf-96c4-933e892e6893?autoplay=1" width="760" height="240">
+      <a href="https://suno.com/song/80433eb6-acf2-4caf-96c4-933e892e6893?autoplay=1">Escuchar en Suno</a>
+    </iframe>
+  </div>
+  
   <footer>
     © 2025 El Poker de los Malditos. Todos los derechos reservados.  
     <br>Hecho con amor, humo de puro y whisky barato. Porque los ricos también juegan.
