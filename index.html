@@ -21,7 +21,7 @@
 
     header {
       background-color: rgba(26, 26, 26, 0.9);
-      padding: 80px 20px;
+      padding: 60px 20px;
       text-align: center;
       border-bottom: 3px solid crimson;
       position: relative;
@@ -58,9 +58,9 @@
     }
 
     section:hover {
-      transform: scale(1.05);  /* Aumentar ligeramente la sección */
-      box-shadow: 0 0 30px rgba(255, 0, 0, 0.6); /* Sombra roja con un toque de brillo */
-      background-color: rgba(30, 30, 30, 0.9); /* Hacer el fondo ligeramente más oscuro */
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+      background-color: rgba(30, 30, 30, 0.9);
     }
 
     section h2 {
@@ -74,8 +74,8 @@
     }
 
     section h2:hover {
-      color: gold; /* Resaltar el texto del encabezado */
-      text-shadow: 2px 2px 10px crimson; /* Un toque de sombra al texto */
+      color: gold;
+      text-shadow: 2px 2px 10px crimson;
     }
 
     .btn {
@@ -138,27 +138,66 @@
     }
 
     iframe:hover {
-      transform: scale(1.05); /* Añadir efecto sutil de zoom */
+      transform: scale(1.05);
     }
 
     /* Responsive Styling */
     @media (max-width: 768px) {
       header h1 {
-        font-size: 3.8em;
+        font-size: 3.5em;
       }
 
-      h2 {
+      header p {
+        font-size: 1.2em;
+      }
+
+      section {
+        padding: 20px;
+        font-size: 1.2em;
+        margin: 20px;
+      }
+
+      section h2 {
         font-size: 2.8em;
       }
 
       .btn {
         padding: 15px 30px;
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
 
       iframe {
         width: 100%;
         height: auto;
+      }
+
+      footer {
+        font-size: 1em;
+        padding: 20px;
+      }
+    }
+
+    /* Mobile adjustment for text */
+    @media (max-width: 480px) {
+      body {
+        font-size: 1em; /* Reduce overall text size for mobile */
+      }
+
+      header h1 {
+        font-size: 3.2em;
+      }
+
+      section h2 {
+        font-size: 2.5em;
+      }
+
+      .btn {
+        padding: 12px 25px;
+        font-size: 1.1em;
+      }
+
+      footer {
+        font-size: 0.9em;
       }
     }
   </style>
